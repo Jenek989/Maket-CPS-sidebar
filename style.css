@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+        url('fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Bold.woff') format('woff'),
+        url('fonts/TTLakes-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Regular.woff') format('woff'),
+        url('fonts/TTLakes-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TTLakes-Medium.woff') format('woff'),
+        url('fonts/TTLakes-Medium.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    text-decoration: inherit;
+    background-color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    min-width: 768px;
+    background-color: #FFFFFF;
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    background: #FFFFFF;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.sidebar-header {
+    padding: 0 24px;
+}
+
+.sidebar-upper-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+
+}
+
+.sidebar-upper-menu__link-cancel {
+    background: url("img/cancel.svg") no-repeat 50% 50%;
+}
+
+.sidebar-upper-menu__link-search {
+    background: url("img/search.svg") no-repeat 50% 50%;
+}
+
+.sidebar-upper-menu__link-phone {
+    background: url("img/phone.svg") no-repeat 50% 50%;
+}
+
+.sidebar-upper-menu__link-message {
+    background: url("img/message.svg") no-repeat 50% 50%;
+}
+
+.sidebar-upper-menu__link-contact {
+    background: url("img/contact.svg") no-repeat 50% 50%;
+}
+
+.sidebar-upper-menu__item--shift-left {
+    flex-grow: 1;
+    margin-left: 16px;
+}
+
+.visualitty-hidden {
+    visibility: hidden;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FF3E79;
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 24px;
+    padding-bottom: 32px;
+}
+
+.sidebar-footer--shift-bottom {
+    margin-top: auto;
+}
+
+.sidebar-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar-navigation__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 24px;
+}
+
+.sidebar-navigation__item {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-navigation__item:hover::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    background: #41F6D7;
+    left: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.2s;
+}
+
+.opacity:hover {
+    color: rgba(126, 126, 130, 0.8);
+    transition: 0.2s;
+}
+
+.icon__opacity:hover {
+    background-color: rgba(255, 110, 155, 0.9);
+    transition: 0.2s;
+}
+
+.icon__opacity:not(:hover) {
+    transition: 0.2s;
+}
+
+.opacity:not(:hover) {
+    transition: 0.2s;
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-contacts__list {
+    display: flex;
+    gap: 16px;
+}
+
+.sidebar-contacts__number {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.sidebar-lang__list {
+    display: flex;
+    gap: 7px;
+}
