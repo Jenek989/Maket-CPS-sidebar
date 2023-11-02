@@ -189,7 +189,12 @@ li {
     gap: 16px;
 }
 
+.sidebar-contacts__mail {
+    align-self: flex-start;
+}
+
 .sidebar-contacts__number {
+    align-self: flex-start;
     font-size: 24px;
     font-weight: bold;
     line-height: 32px;
